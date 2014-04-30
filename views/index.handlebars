@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>Boilerplate</title>	
+	<title>Assignment Upload</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -19,8 +19,52 @@
 
 <body>
       <div class="container">
-      	<h1>This is a boilerplate</h1>
+      	<h1>Assignment 3 Uploader</h1>
+        <h3>Please upload your Axure rp file here
+        </h3>
+        <div class="row">
+        <div class="col-xs-6">
+        <form action="/upload" method="post" enctype"multipart/form-data">
+          <div class="row">
+            <div class="col-xs-6 col-md-6">
+              Partner 1's First Name: <input type="string" name="p1fn"></input><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-md-6">
+            Partner 1's Last Name: <input type="string" name="p1ln"></input><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-md-6"> 
+              Partner 2's First Name: <input type="string" name="p2fn"></input><br>
+            </div>  
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-md-6">           
+              Partner 2's Last Name: <input type="string" name="p2ln"></input><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-md-6">          
+            Select which assignment part 
+            <select name="assv" class="form-control  col-md-1">
+                <option value="a">Axure File (Part A)</option>
+                <option value="b">Balsamiq File (Part B)</option>
+            </select><br><br>
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <input type="file" name="rpFile"/>
+             </div>
+            </div>
+            <button type="submit" class="btn btn-info">Submit</button> 
+            </div> 
+            </div>   
+    </form>    
     </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
